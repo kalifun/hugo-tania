@@ -30,17 +30,19 @@
 {{ $projects := where .Site.RegularPages "Section" "projects" }}
 {{ $pages = .Paginate ($pages)  }}
 {{ $archivesPage := first 1 (where .Site.RegularPages "Layout" "eq" "archives") }}
+{{ $postPages := where .Site.RegularPages "Section" "post"}}
+{{ $postPage := first 1 (where .Site.RegularPages "Section" "post") }}
 
 <div class="container">
     <section>
         <h2>
-            Latest Articles
-            {{ range $archivesPage }}
+            Post
+            {{ range $postPage }}
             <a class="section-button" href="{{ .RelPermalink }}">View all</a>
             {{ end }}
         </h2>
         <div class="posts">
-            {{ range $pages.Pages }}
+            {{ range $postPages }}
             <div class="post">
                 <a href="{{ .RelPermalink }}">
                     <div class="post-row">
