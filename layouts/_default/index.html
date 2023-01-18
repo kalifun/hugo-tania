@@ -1,6 +1,14 @@
 {{ define "main" }}
 
 <div class="container">
+    <div class="my">
+        <div class="content">
+            <h1>hi, {{.Site.Params.author}} {{.Site.Params.titleEmoji}} </h1>
+        </div>
+    </div>
+</div>
+
+<div class="container">
     <section class="my">
         <div class="content">
             {{ with .Content }}
