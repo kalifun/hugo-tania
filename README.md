@@ -1,5 +1,13 @@
 # Hugo Theme Tania
 
+> I have made changes to its code
+
+
+## Screenshots
+
+![](./images/main.png)
+![](./images/page1.png)
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/bae5db51-7cc6-41e2-9615-029ade8aa264/deploy-status)](https://app.netlify.com/sites/hugo-tania/deploys)
 
 A simple theme for bloggers.
