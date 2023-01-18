@@ -4,7 +4,6 @@
     {{ partialCached "head/colorScheme" . }}
 
     <body class="dark">
-        {{ partial "header.html" . }}
         <main>
             {{ block "main" . }}{{ end }}
         </main>
